@@ -18,3 +18,28 @@ body {
    */
   background-image: url('./images/bg-pattern.png');
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.search-form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.serch-form-label {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.serch-form-input {
+  padding: 5px;
+}
