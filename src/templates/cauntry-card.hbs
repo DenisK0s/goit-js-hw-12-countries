@@ -1,9 +1,17 @@
+<h1 class="country-name">{{name}}</h1>
 <div class="country-card-wrapper">
-  <h1 class="country-name">{{}}</h1>
-  <ul class="country-properties-list">
-    <li class="coutry-property">{{}}</li>
-    <li class="coutry-property">{{}}</li>
-    <li class="coutry-property"></li>
+  <ul class="country-properties-list list">
+    <li class="coutry-property"><span class="coutry-property-name">Capital : </span>{{capital}}</li>
+    <li class="coutry-property"><span class="coutry-property-name">Population : </span>{{population}}</li>
+    <li class="coutry-property">
+      <span class="coutry-property-name">Languages : </span>
+      <ul class="country-properties-sublist">
+        {{#each languages}}
+        <li class="country-properties-sublist-item">{{this.name}}</li>
+        {{/each}}
+      </ul>
+    </li>
   </ul>
-
+  <img src="{{flag}}" alt="{{name}}" class="country-card-image">
+</div>
 </div>
